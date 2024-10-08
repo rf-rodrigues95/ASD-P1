@@ -59,6 +59,7 @@ public class AutomatedApp extends GenericProtocol {
     
     public AutomatedApp(Properties properties, short commProtoId) throws HandlerRegistrationException {
         super(PROTO_NAME, PROTO_ID);
+        
         this.commProtoId = commProtoId;
 
         //Read configurations
@@ -83,7 +84,7 @@ public class AutomatedApp extends GenericProtocol {
         	this.peerIDsHex.add(HashProducer.toNumberFormat(id).toString(16));
         }
         
-        if(properties.containsKey("processSequece")) {
+        if(properties.containsKey("processSequence")) {
         	this.processSequenceNumber = Integer.parseInt(properties.getProperty("processSequence"));
         	this.myPeerID = this.peerIDs.get(this.processSequenceNumber-1);
             this.myPeerIDHex = this.peerIDsHex.get(this.processSequenceNumber-1);

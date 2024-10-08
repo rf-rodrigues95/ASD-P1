@@ -5,7 +5,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import protocols.apps.AutomatedApp;
-import protocols.dht.EmptyDHT;
+import protocols.dht.ChordDHT;
 import protocols.point2point.EmptyPoint2PointComm;
 import pt.unl.fct.di.novasys.babel.core.Babel;
 import pt.unl.fct.di.novasys.network.data.Host;
@@ -27,7 +27,7 @@ public class Main {
     
 
     public static void main(String[] args) throws Exception {
-
+    	
         //Get the (singleton) babel instance
         Babel babel = Babel.getInstance();
 
@@ -47,15 +47,16 @@ public class Main {
                 Integer.parseInt(props.getProperty("port"))+ 1);
         
         logger.info("Hello, I am {}", dhtHost);
+        
 
         // Application
         AutomatedApp broadcastApp = new AutomatedApp(props, EmptyPoint2PointComm.PROTOCOL_ID);
-        
+                
         //Point-to-Point Communication Protocol
-        EmptyPoint2PointComm commProto = new EmptyPoint2PointComm(commHost, EmptyDHT.PROTOCOL_ID);
-        
+        EmptyPoint2PointComm commProto = new EmptyPoint2PointComm(commHost, ChordDHT.PROTOCOL_ID);
+                
         //DHT Protocol
-        EmptyDHT dhtProto = new EmptyDHT(dhtHost);
+        ChordDHT dhtProto = new ChordDHT(dhtHost);
         
         //Register applications in babel
         babel.registerProtocol(broadcastApp);

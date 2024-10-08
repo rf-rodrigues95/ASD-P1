@@ -18,6 +18,7 @@ public class LookupReply extends ProtoReply {
 	private final byte[] peerID;
 	private final Set<Pair<byte[],Host>> peers;
 	
+	//peers KEY is unique ID of the node, while the value corresponds to the actual ip and port of the node
 	public LookupReply(byte[] peerID) {
 		super(REPLY_ID);
 		this.peerID = peerID.clone();

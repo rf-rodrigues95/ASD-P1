@@ -1,0 +1,124 @@
+[32mI[21:12:46,190] [main]Main:[m Hello, I am 192.168.0.101:10102
+[36mD[21:12:46,430] [TCPChannel-1-1]TCPChannel:[m Server socket ready
+[32mI[21:12:46,431] [main]BroadcastApp:[m Waiting...
+[36mD[21:12:46,432] [TCPChannel-1-1]TCPChannel:[m onOpenConnection creating connection to: 192.168.0.101:10101
+[36mD[21:12:46,433[36mD[21:12:46,442] [KQueueEventLoopGroup-3-1]InConnectionHandler:[m Incoming channel active: /192.168.0.101:62204
+[36mD[21:12:46,449] [TCPChannel-1-1]TCPChannel:[m InboundConnectionUp 192.168.0.101:10102
+[36mD[21:[36mD[21:12:46,450] [KQueueEventLoopGroup-3-1]OutConnectionHandler:[m Handshake completed to: 192.168.0.101:10101
+[36mD[21:12:46,450] [TCPChannel-1-1]TCPChannel:[m OutboundConnectionUp 192.168.0.101:10101
+[36mD[21:12:46,450] [200-Flood]GenericProtocol:[m Handling event: ChannelEvent{event=OutConnectionUp{node=192.168.0.101:10101}, channelId=1}
+[36mD[21:12:46,450] [200-Flood]GenericProtocol:[m Discarding unhandled channel event (id 1): Chann[36mD[21:12:47,511] [100-FullMembership]GenericProtocol:[m Handling event: TimerEvent{uuid=2, timer=protocols.membership.full.timers.SampleTimer@3a523af9, consumer=protocols.membership.full.GossipBasedFullMembership@3495c3c3, triggerTime=6005, periodic=true, period=3000}
+[36mD[21:12:47,511] [100-FullMembership]GossipBasedFullMembership:[m Sample Time: membership[]
+[36mD[21:12:49,443] [TCPChannel-1-1]TCPChannel:[m DeliverMessage BabelMessage{message=ShuffleMessage{subset=[192.168.0.101:10102]}, sourceProto=100, destProto=100} 192.168.0.101:10102 IN
+[36mD[21:12:49,444] [100-FullMembership]GenericProtocol:[m Handling event: MessageInEvent{msg=BabelMessage{message=ShuffleMessage{subset=[192.168.0.101:10102]}, sourceProto=100, destProto=100}, from=192.168.0.101:10102, channelId=1}
+[36mD[21:12:49,445] [100-FullMembership]GossipBasedFullMembership:[m Received ShuffleMessage{subset=[192.168.0.101:10102]} from 192.168.0.101:10102
+[36mD[21:12:49,446] [TCPChannel-1-1]TCPChannel:[m onOpenConnection creating connection to: 192.168.0.101:10102
+[36mD[21:12:49,448] [KQueueEventLoopGroup-3-2]OutConnectionHandler:[m Connecting to 192.168.0.101:10102
+[36mD[21:12:49,457] [KQueueEventLoopGroup-3-2]OutConnectionHandler:[m Handshake completed to: 192.168.0.101:10102
+[36mD[21:12:49,458] [TCPChannel-1-1]TCPChannel:[m OutboundConnectionUp 192.168.0.101:10102
+[36mD[21:12:49,458] [200-Flood]GenericProtocol:[m Handling event: ChannelEvent{event=OutConnectionUp{node=192.168.0.101:10102}, channelId=1}
+[36mD[21:12:49,458] [100-FullMembership]GenericProtocol:[m Handling event: ChannelEvent{event=OutConnectionUp{node=192.168.0.101:10102}, channelId=1}
+[36mD[21:12:49,458] [200-Flood]GenericProtocol:[m Discarding unhandled channel event (id 1): ChannelEvent{event=OutConnectionUp{node=192.168.0.101:10102}, channelId=1}
+[36mD[21:12:49,459] [100-FullMembership]GossipBasedFullMembership:[m Connection to 192.168.0.101:10102 is up
+[36mD[21:12:49,459] [200-Flood]GenericProtocol:[m Handling event: pt.unl.fct.di.novasys.babel.internal.NotificationEvent@7337f88e
+[32mI[21:12:49,459] [200-Flood]FloodBroadcast:[m New neighbour: 192.168.0.101:10102
+[36mD[21:12:49,505] [300-BroadcastApp]GenericProtocol:[m Handling event: TimerEvent{uuid=1, timer=protocols.apps.t[36mD[21:12:49,513] [TCPChannel-1-1]TCPChannel:[m DeliverMessage BabelMessage{message=FloodMessage{mid=458a7805-ea61-4b92-b8f1-0a44bb55a202}, sourceProto=200, destProto=200} 192.168.0.101:10101 IN
+[36mD[21:12:49,513] [200-Flood]GenericProtocol:[m Handling event: MessageInEvent{msg=BabelMessage{message=FloodMessage{mid=458a7805-ea61-4b92-b8f1-0a44bb55a202}, sourceProto=200, destProto=200}, from=192.168.0.101:10101, channelId=1}
+[36mD[21:12:49,514] [300-BroadcastApp]GenericProtocol:[m Handling event: pt.unl.fct.di.novasys.babel.internal.NotificationEvent@17d40158
+[32mI[21:12:49,514] [300-BroadcastApp]BroadcastApp:[m Received 458a7805-ea61-4b92-b8f1-0a44bb55a202 - QKJRVEJWKWBQCGDMBAPW (20) from 192.168.0.101:10101
+[36mD[21:12:50,517] [TCPChannel-1-1]TCPChannel:[m DeliverMessage BabelMessage{message=ShuffleMessage{subset=[192.168.0.101:10101]}, sourceProto=100, destProto=100} 192.168.0.101:10101 IN
+[36mD[21:12:50,517] [100-FullMembership]GenericProtocol:[m Handling event: MessageInEvent{msg=BabelMessage{message=ShuffleMessage{subset=[192.168.0.101:10101]}, sourceProto=100, destProto=100}, from=192.168.0.101:10101, channelId=1}
+[36mD[21:12:50,517] [100-FullMembership]GossipBasedFullMembership:[m Received ShuffleMessage{subset=[192.168.0.101:10101]} from 192.168.0.101:10101
+[36mD[21:12:51,436] [300-BroadcastApp]GenericProtocol:[m Handling event: TimerEvent{uuid=1, timer=protocols.apps.timers.StartTimer@1913fdd2, consumer=protocols.apps.BroadcastApp@53fe15ff, triggerTime=5000, periodic=false, period=-1}
+[32mI[21:12:51,436] [300-BroadcastApp]BroadcastApp:[m Starting
+[36mD[21:12:51,437] [300-BroadcastApp]GenericProtocol:[m Handling event: TimerEvent{uuid=3, timer=protocols.apps.timers.BroadcastTimer@1d2c6a28, consumer=protocols.apps.BroadcastApp@53fe15ff, triggerTime=8005, periodic=true, period=3000}
+[32mI[21:12:51,440] [300-BroadcastApp]BroadcastApp:[m Sending: 3aa566ca-1c33-4953-b4db-b5e7dc9be5a3 - AFQECEEVCLMULDOVWINK (20)
+[36mD[21:12:51,440] [200-Flood]GenericProtocol:[m Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@2aa3ad26
+[36mD[21:12:51,441] [300-BroadcastApp]GenericProtocol:[m Handling event: pt.unl.fct.di.novasys.babel.internal.NotificationEvent@7d504889
+[36mD[21:12:51,441] [200-Flood]GenericProtocol:[m Sending: FloodMessage{mid=3aa566ca-1c33-4953-b4db-b5e7dc9be5a3} to 192.168.0.101:10101 proto 200 channel 1
+[32mI[21:12:51,441] [300-BroadcastApp]BroadcastApp:[m Received 3aa566ca-1c33-4953-b4db-b5e7dc9be5a3 - AFQECEEVCLMULDOVWINK (20) from 192.168.0.101:10102
+[36mD[21:12:51,441] [TCPChannel-1-1]TCPChannel:[m SendMessage B[36mD[21:12:51,443] [TCPChannel-1-1]TCPChannel:[m DeliverMessage BabelMessage{message=FloodMessage{mid=3aa566ca-1c33-4953-b4db-b5e7dc9be5a3}, sourceProto=200, destProto=200} 192.168.0.101:10102 IN
+[36mD[21:12:51,443] [200-Flood]GenericProtocol:[m Handling event: MessageInEvent{msg=BabelMessage{message=FloodMessage{mid=3aa566ca-1c33-4953-b4db-b5e7dc9be5[36mD[21:12:52,438] [100-FullMembership]GenericProtocol:[m Handling event: TimerEvent{uuid=2, timer=protocols.membership.full.timers.SampleTimer@234b40e2, consumer=protocols.membership.full.GossipBasedFullMembership@2d8caafb, triggerTime=9006, periodic=true, period=3000}
+[36mD[21:12:52,439] [100-FullMembership]GossipBasedFullMembership:[m Sample Time: membership[19[36mD[21:12:52,443] [TCPChannel-1-1]TCPChannel:[m DeliverMessage BabelMessage{message=ShuffleMessage{subset=[192.168.0.101:10102]}, sourceProto=100, destProto=100} 192.168.0.101:10102 IN
+[36mD[21:12:52,444] [100-FullMembership]GenericProtocol:[m Handling event: MessageInEvent{msg=BabelMessage{message=ShuffleMessage{subset=[192.168.0.101:10102]}, sourceProto=100, destProto=100}, from=192.168.0.101:10102, channelId=1}
+[36mD[21:12:52,444] [100-FullMembership]GossipBasedFullMembership:[m Received ShuffleMessage{subset=[192.168.0.101:10102]} from 192.168.0.101:10102
+[36mD[21:12:52,509] [300-BroadcastApp]GenericProtocol:[m Handling event: TimerEvent{uuid=3, timer=protocols.apps.t[36mD[21:12:52,513] [TCPChannel-1-1]TCPChannel:[m DeliverMessage BabelMessage{message=FloodMessage{mid=bc09417f-88bd-4719-9a17-f9ba46a8491e}, sourceProto=200, destProto=200} 192.168.0.101:10101 IN
+[36mD[21:12:52,514] [200-Flood]GenericProtocol:[m Handling event: MessageInEvent{msg=BabelMessage{message=FloodMessage{mid=bc09417f-88bd-4719-9a17-f9ba46a8491e}, sourceProto=200, destProto=200}, from=192.168.0.101:10101, channelId=1}
+[36mD[21:12:52,514] [300-BroadcastApp]GenericProtocol:[m Handling event: pt.unl.fct.di.novasys.babel.internal.NotificationEvent@1e997d59
+[32mI[21:12:52,514] [300-BroadcastApp]BroadcastApp:[m Received bc09417f-88bd-4719-9a17-f9ba46a8491e - ZSOXHDJFUJWCTVXHQZII (20) from 192.168.0.101:10101
+[36mD[21:12:53,518] [TCPChannel-1-1]TCPChannel:[m DeliverMessage BabelMessage{message=ShuffleMessage{subset=[192.168.0.101:10101]}, sourceProto=100, destProto=100} 192.168.0.101:10101 IN
+[36mD[21:12:53,519] [100-FullMembership]GenericProtocol:[m Handling event: MessageInEvent{msg=BabelMessage{message=ShuffleMessage{subset=[192.168.0.101:10101]}, sourceProto=100, destProto=100}, from=192.168.0.101:10101, channelId=1}
+[36mD[21:12:53,519] [100-FullMembership]GossipBasedFullMembership:[m Received ShuffleMessage{subset=[192.168.0.101:10101]} from 192.168.0.101:10101
+[36mD[21:12:54,441] [300-BroadcastApp]GenericProtocol:[m Handling event: TimerEvent{uuid=3, timer=protocols.apps.timers.BroadcastTimer@1d2c6a28, consumer=protocols.apps.BroadcastApp@53fe15ff, triggerTime=11009, periodic=true, period=3000}
+[32mI[21:12:54,442] [300-BroadcastApp]BroadcastApp:[m Sending: dae13a72-e142-482a-b1c2-cb36b7fe452f - CNGIZUGCEZZFOZNVMYHO (20)
+[36mD[21:12:54,443] [200-Flood]GenericProtocol:[m Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@339beacc
+[36mD[21:12:54,443] [300-BroadcastApp]GenericProtocol:[m Handling event: pt.unl.fct.di.novasys.babel.internal.NotificationEvent@340681cf
+[36mD[21:12:54,443] [200-Flood]GenericProtocol:[m Sending: FloodMessage{mid=dae13a72-e142-482a-b1c2-cb36b7fe452f} to 192.168.0.101:10101 proto 200 channel 1
+[32mI[21:12:54,443] [300-BroadcastApp]BroadcastApp:[m Received dae13a72-e142-482a-b1c2-cb36b7fe452f - CNGIZUGCEZZFOZNVMYHO (20) from 192.168.0.101:10102
+[36mD[21:12:54,444] [TCPChannel-1-1]TCPChannel:[m SendMessage B[36mD[21:12:54,446] [TCPChannel-1-1]TCPChannel:[m DeliverMessage BabelMessage{message=FloodMessage{mid=dae13a72-e142-482a-b1c2-cb36b7fe452f}, sourceProto=200, destProto=200} 192.168.0.101:10102 IN
+[36mD[21:12:54,447] [200-Flood]GenericProtocol:[m Handling event: MessageInEvent{msg=BabelMessage{message=FloodMessage{mid=dae13a72-e142-482a-b1c2-cb36b7fe45[36mD[21:12:55,443] [100-FullMembership]GenericProtocol:[m Handling event: TimerEvent{uuid=2, timer=protocols.membership.full.timers.SampleTimer@234b40e2, consumer=protocols.membership.full.GossipBasedFullMembership@2d8caafb, triggerTime=12011, periodic=true, period=3000}
+[36mD[21:12:55,444] [100-FullMembership]GossipBasedFullMembership:[m Sample Time: membership[1[36mD[21:12:55,451] [TCPChannel-1-1]TCPChannel:[m DeliverMessage BabelMessage{message=ShuffleMessage{subset=[192.168.0.101:10102]}, sourceProto=100, destProto=100} 192.168.0.101:10102 IN
+[36mD[21:12:55,452] [100-FullMembership]GenericProtocol:[m Handling event: MessageInEvent{msg=BabelMessage{message=ShuffleMessage{subset=[192.168.0.101:10102]}, sourceProto=100, destProto=100}, from=192.168.0.101:10102, channelId=1}
+[36mD[21:12:55,452] [100-FullMembership]GossipBasedFullMembership:[m Received ShuffleMessage{subset=[192.168.0.101:10102]} from 192.168.0.101:10102
+[36mD[21:12:55,515] [300-BroadcastApp]GenericProtocol:[m Handling event: TimerEvent{uuid=3, timer=protocols.apps.ti[36mD[21:12:55,517] [TCPChannel-1-1]TCPChannel:[m DeliverMessage BabelMessage{message=FloodMessage{mid=097937f8-e02d-4bd1-89b5-f1f8c5dc9ce7}, sourceProto=200, destProto=200} 192.168.0.101:10101 IN
+[36mD[21:12:55,517] [200-Flood]GenericProtocol:[m Handling event: MessageInEvent{msg=BabelMessage{message=FloodMessage{mid=097937f8-e02d-4bd1-89b5-f1f8c5dc9ce7}, sourceProto=200, destProto=200}, from=192.168.0.101:10101, channelId=1}
+[36mD[21:12:55,517] [300-BroadcastApp]GenericProtocol:[m Handling event: pt.unl.fct.di.novasys.babel.internal.NotificationEvent@7ea82d16
+[32mI[21:12:55,518] [300-BroadcastApp]BroadcastApp:[m Received 097937f8-e02d-4bd1-89b5-f1f8c5dc9ce7 - NBYWKXKFFBJQTWDDWAFZ (20) from 192.168.0.101:10101
+[36mD[21:12:56,522] [TCPChannel-1-1]TCPChannel:[m DeliverMessage BabelMessage{message=ShuffleMessage{subset=[192.168.0.101:10101]}, sourceProto=100, destProto=100} 192.168.0.101:10101 IN
+[36mD[21:12:56,523] [100-FullMembership]GenericProtocol:[m Handling event: MessageInEvent{msg=BabelMessage{message=ShuffleMessage{subset=[192.168.0.101:10101]}, sourceProto=100, destProto=100}, from=192.168.0.101:10101, channelId=1}
+[36mD[21:12:56,523] [100-FullMembership]GossipBasedFullMembership:[m Received ShuffleMessage{subset=[192.168.0.101:10101]} from 192.168.0.101:10101
+[36mD[21:12:57,446] [300-BroadcastApp]GenericProtocol:[m Handling event: TimerEvent{uuid=3, timer=protocols.apps.timers.BroadcastTimer@1d2c6a28, consumer=protocols.apps.BroadcastApp@53fe15ff, triggerTime=14013, periodic=true, period=3000}
+[32mI[21:12:57,447] [300-BroadcastApp]BroadcastApp:[m Sending: 03f854aa-ad1b-40a6-b3f2-5e7b60e97bd7 - MIYVWHAQPZSKYQQHDZUQ (20)
+[36mD[21:12:57,448] [200-Flood]GenericProtocol:[m Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@697e5239
+[36mD[21:12:57,448] [200-Flood]GenericProtocol:[m Sending: FloodMessage{mid=03f854aa-ad1b-40a6-b3f2-5e7b60e97bd7} to 192.168.0.101:10101 proto 200 channel 1
+[36mD[21:12:57,448] [300-BroadcastApp]GenericProtocol:[m Handling event: pt.unl.fct.di.novasys.babel.internal.NotificationEvent@1c3364a
+[36mD[21:12:57,449] [TCPChannel-1-1]TCPChannel:[m SendMessage BabelMessage{message=FloodMessage{mid=03f854aa-ad1b-40a6-b3f2-5e7b60e97bd7}, sourceProto=200, destProto=200} 192.168.0.101:10101 OUT
+[32mI[21:12:57,449] [3[36mD[21:12:57,451] [TCPChannel-1-1]TCPChannel:[m DeliverMessage BabelMessage{message=FloodMessage{mid=03f854aa-ad1b-40a6-b3f2-5e7b60e97bd7}, sourceProto=200, destProto=200} 192.168.0.101:10102 IN
+[36mD[21:12:57,452] [200-Flood]GenericProtocol:[m Handling event: MessageInEvent{msg=BabelMessage{message=FloodMessage{mid=03f854aa-ad1b-40a6-b3f2-5e7b60e97b[36mD[21:12:58,447] [100-FullMembership]GenericProtocol:[m Handling event: TimerEvent{uuid=2, timer=protocols.membership.full.timers.SampleTimer@234b40e2, consumer=protocols.membership.full.GossipBasedFullMembership@2d8caafb, triggerTime=15015, periodic=true, period=3000}
+[36mD[21:12:58,448] [100-FullMembership]GossipBasedFullMembership:[m Sample Time: membership[1[36mD[21:12:58,451] [TCPChannel-1-1]TCPChannel:[m DeliverMessage BabelMessage{message=ShuffleMessage{subset=[192.168.0.101:10102]}, sourceProto=100, destProto=100} 192.168.0.101:10102 IN
+[36mD[21:12:58,452] [100-FullMembership]GenericProtocol:[m Handling event: MessageInEvent{msg=BabelMessage{message=ShuffleMessage{subset=[192.168.0.101:10102]}, sourceProto=100, destProto=100}, from=192.168.0.101:10102, channelId=1}
+[36mD[21:12:58,452] [100-FullMembership]GossipBasedFullMembership:[m Received ShuffleMessage{subset=[192.168.0.101:10102]} from 192.168.0.101:10102
+[36mD[21:12:58,518] [300-BroadcastApp]GenericProtocol:[m Handling event: TimerEvent{uuid=3, timer=protocols.apps.ti[36mD[21:12:58,523] [TCPChannel-1-1]TCPChannel:[m DeliverMessage BabelMessage{message=FloodMessage{mid=1efa61d4-7775-4b09-9e12-67b82d8f6403}, sourceProto=200, destProto=200} 192.168.0.101:10101 IN
+[36mD[21:12:58,524] [200-Flood]GenericProtocol:[m Handling event: MessageInEvent{msg=BabelMessage{message=FloodMessage{mid=1efa61d4-7775-4b09-9e12-67b82d8f6403}, sourceProto=200, destProto=200}, from=192.168.0.101:10101, channelId=1}
+[36mD[21:12:58,524] [300-BroadcastApp]GenericProtocol:[m Handling event: pt.unl.fct.di.novasys.babel.internal.NotificationEvent@54e5f09e
+[32mI[21:12:58,525] [300-BroadcastApp]BroadcastApp:[m Received 1efa61d4-7775-4b09-9e12-67b82d8f6403 - PYLOMWWHITJCUUZDRQLL (20) from 192.168.0.101:10101
+[36mD[21:12:59,527] [TCPChannel-1-1]TCPChannel:[m DeliverMessage BabelMessage{message=ShuffleMessage{subset=[192.168.0.101:10101]}, sourceProto=100, destProto=100} 192.168.0.101:10101 IN
+[36mD[21:12:59,528] [100-FullMembership]GenericProtocol:[m Handling event: MessageInEvent{msg=BabelMessage{message=ShuffleMessage{subset=[192.168.0.101:10101]}, sourceProto=100, destProto=100}, from=192.168.0.101:10101, channelId=1}
+[36mD[21:12:59,528] [100-FullMembership]GossipBasedFullMembership:[m Received ShuffleMessage{subset=[192.168.0.101:10101]} from 192.168.0.101:10101
+[36mD[21:13:00,450] [300-BroadcastApp]GenericProtocol:[m Handling event: TimerEvent{uuid=3, timer=protocols.apps.timers.BroadcastTimer@1d2c6a28, consumer=protocols.apps.BroadcastApp@53fe15ff, triggerTime=17018, periodic=true, period=3000}
+[32mI[21:13:00,452] [300-BroadcastApp]BroadcastApp:[m Sending: dbee82db-17be-4852-a0eb-36d807fb05bc - NNCMSPAXUSOCCJAXFHGN (20)
+[36mD[21:13:00,452] [200-Flood]GenericProtocol:[m Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@6ac8892f
+[36mD[21:13:00,452] [300-BroadcastApp]GenericProtocol:[m Handling event: pt.unl.fct.di.novasys.babel.internal.NotificationEvent@546d0b34
+[36mD[21:13:00,453] [200-Flood]GenericProtocol:[m Sending: FloodMessage{mid=dbee82db-17be-4852-a0eb-36d807fb05bc} to 192.168.0.101:10101 proto 200 channel 1
+[32mI[21:13:00,453] [300-BroadcastApp]BroadcastApp:[m Received dbee82db-17be-4852-a0eb-36d807fb05bc - NNCMSPAXUSOCCJAXFHGN (20) from 192.168.0.101:10102
+[36mD[21:13:00,453] [TCPChannel-1-1]TCPChannel:[m SendMessage [36mD[21:13:00,455] [TCPChannel-1-1]TCPChannel:[m DeliverMessage BabelMessage{message=FloodMessage{mid=dbee82db-17be-4852-a0eb-36d807fb05bc}, sourceProto=200, destProto=200} 192.168.0.101:10102 IN
+[36mD[21:13:00,456] [200-Flood]GenericProtocol:[m Handling event: MessageInEvent{msg=BabelMessage{message=FloodMessage{mid=dbee82db-17be-4852-a0eb-36d807fb05b[36mD[21:13:01,450] [100-FullMembership]GenericProtocol:[m Handling event: TimerEvent{uuid=2, timer=protocols.membership.full.timers.SampleTimer@234b40e2, consumer=protocols.membership.full.GossipBasedFullMembership@2d8caafb, triggerTime=18018, periodic=true, period=3000}
+[36mD[21:13:01,451] [100-FullMembership]GossipBasedFullMembership:[m Sample Time: membership[[36mD[21:13:01,453] [TCPChannel-1-1]TCPChannel:[m DeliverMessage BabelMessage{message=ShuffleMessage{subset=[192.168.0.101:10102]}, sourceProto=100, destProto=100} 192.168.0.101:10102 IN
+[36mD[21:13:01,453] [100-FullMembership]GenericProtocol:[m Handling event: MessageInEvent{msg=BabelMessage{message=ShuffleMessage{subset=[192.168.0.101:10102]}, sourceProto=100, destProto=100}, from=192.168.0.101:10102, channelId=1}
+[36mD[21:13:01,453] [100-FullMembership]GossipBasedFullMembership:[m Received ShuffleMessage{subset=[192.168.0.101:10102]} from 192.168.0.101:10102
+[36mD[21:13:01,523] [300-BroadcastApp]GenericProtocol:[m Handling event: TimerEvent{uuid=3, timer=protocols.apps.tim[36mD[21:13:01,527] [TCPChannel-1-1]TCPChannel:[m DeliverMessage BabelMessage{message=FloodMessage{mid=46f5ae6c-f7f2-4c88-8820-47fa510a7512}, sourceProto=200, destProto=200} 192.168.0.101:10101 IN
+[36mD[21:13:01,528] [200-Flood]GenericProtocol:[m Handling event: MessageInEvent{msg=BabelMessage{message=FloodMessage{mid=46f5ae6c-f7f2-4c88-8820-47fa510a7512}, sourceProto=200, destProto=200}, from=192.168.0.101:10101, channelId=1}
+[36mD[21:13:01,528] [300-BroadcastApp]GenericProtocol:[m Handling event: pt.unl.fct.di.novasys.babel.internal.NotificationEvent@6b924c32
+[32mI[21:13:01,528] [300-BroadcastApp]BroadcastApp:[m Received 46f5ae6c-f7f2-4c88-8820-47fa510a7512 - DAHGHTEIEZYQMOWSHFKI (20) from 192.168.0.101:10101
+[36mD[21:13:02,532] [TCPChannel-1-1]TCPChannel:[m DeliverMessage BabelMessage{message=ShuffleMessage{subset=[192.168.0.101:10101]}, sourceProto=100, destProto=100} 192.168.0.101:10101 IN
+[36mD[21:13:02,532] [100-FullMembership]GenericProtocol:[m Handling event: MessageInEvent{msg=BabelMessage{message=ShuffleMessage{subset=[192.168.0.101:10101]}, sourceProto=100, destProto=100}, from=192.168.0.101:10101, channelId=1}
+[36mD[21:13:02,533] [100-FullMembership]GossipBasedFullMembership:[m Received ShuffleMessage{subset=[192.168.0.101:10101]} from 192.168.0.101:10101
+[36mD[21:13:03,092] [KQueueEventLoopGroup-3-2]InConnectionHandler:[m In connection closed: /192.168.0.101:62205
+[36mD[21:13:03,092] [KQueueEventLoopGroup-3-1]OutConnectionHandler:[m Connection closed: 192.168.0.101:10101
+[36mD[21:13:03,093] [TCPChannel-1-1]TCPChannel:[m OutboundConnectionDown 192.168.0.101:10101
+[36mD[21:13:03,093] [TCPChannel-1-1]TCPChannel:[m InboundConnectionDown 192.168.0.101:10101
+[36mD[21:13:03,093] [200-Flood]GenericProtocol:[m Handling event: ChannelEvent{event=OutConnectionDown{node=192.168.0.101:10101, cause=null}, channelId=1}
+[36mD[21:13:03,093] [100-FullMembership]GenericProtocol:[m Handling event: ChannelEvent{event=OutConnectionDown{node=192.168.0.101:10101, cause=null}, channelId=1}
+[36mD[21:13:03,093] [200-Flood]GenericProtocol:[m Discarding unhandled channel event (id 1): ChannelEvent{event=OutConnectionDown{node=192.168.0.101:10101, cause=null}, channelId=1}
+[36mD[21:13:03,094] [200-Flood]GenericProtocol:[m Handling event: ChannelEvent{event=InConnectionDown{node=192.168.0.101:10101, cause=null}, channelId=1}
+[36mD[21:13:03,094] [200-Flood]GenericProtocol:[m Discarding unhandled channel event (id 1): ChannelEvent{event=InConnectionDown{node=192.168.0.101:10101, cause=null}, channelId=1}
+[36mD[21:13:03,094] [100-FullMembership]GossipBasedFullMembership:[m Connection to 192.168.0.101:10101 is down cause null
+[36mD[21:13:03,094] [100-FullMembership]GenericProtocol:[m Handling event: ChannelEvent{event=InConnectionDown{node=192.168.0.101:10101, cause=null}, channelId=1}
+[36mD[21:13:03,094] [200-Flood]GenericProtocol:[m Handling event: pt.unl.fct.di.novasys.babel.internal.NotificationEvent@5d35d3cd
+[32mI[21:13:03,095] [200-Flood]FloodBroadcast:[m Neighbour down: 192.168.0.101:10101
+[36mD[21:13:03,453] [300-BroadcastApp]GenericProtocol:[m Handling event: TimerEvent{uuid=3, timer=protocols.apps.timers.BroadcastTimer@1d2c6a28, consumer=protocols.apps.BroadcastApp@53fe15ff, triggerTime=20021, periodic=true, period=3000}
+[32mI[21:13:03,454] [300-BroadcastApp]BroadcastApp:[m Sending: d466f736-1c1d-4e0b-af8a-187a50c9ece7 - TGBBFOUDIJWPRWMRGKDU (20)
+[36mD[21:13:03,455] [200-Flood]GenericProtocol:[m Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@31149f2d
+[36mD[21:13:03,455] [300-BroadcastApp]GenericProtocol:[m Handling event: pt.unl.fct.di.novasys.babel.internal.NotificationEvent@73fb466c
+[32mI[21:13:03,455] [300-BroadcastApp]BroadcastApp:[m Received d466f736-1c1d-4e0b-af8a-187a50c9ece7 - TGBBFOUDIJWPRWMRGKDU (20) from 192.168.0.101:10102
+[32mI[21:13:03,683] [Thread-1]Main:[m Goodbye

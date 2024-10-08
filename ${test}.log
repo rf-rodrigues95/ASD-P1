@@ -1,0 +1,412 @@
+I[14:17:38,496] [main]Main: Hello, I am 10.22.105.120:10101
+I[14:17:38,519] [main]AutomatedApp: Waiting...
+I[14:17:38,521] [main]ChordDHT: COUNT: 1
+D[14:17:43,535] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=1, timer=protocols.apps.timers.StartTimer@9e3153, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=5000, periodic=false, period=-1}
+I[14:17:43,537] [300-AutomateCommunicationApp]AutomatedApp: Starting publications
+D[14:17:43,538] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=6017, periodic=true, period=1000}
+I[14:17:43,572] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> -2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408 : 35fc9734-8402-4b3c-be0a-f1a2c0b45215 (100)
+D[14:17:43,572] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@6bc73c00
+I[14:17:43,575] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to -2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408 with message ID 35fc9734-8402-4b3c-be0a-f1a2c0b45215 payload of 100 bytes
+D[14:17:43,576] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@50b5e23b
+I[14:17:43,576] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: -2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408
+I[14:17:43,576] [500-chordDHT]ChordDHT: COUNT: 2
+I[14:17:43,577] [500-chordDHT]ChordDHT: NODE: -19333305225043330601402913026852979672758497763304817372292704117289824797704::-2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408
+I[14:17:43,577] [500-chordDHT]ChordDHT: SUCC: -6327724030281834589456857153459622610039934011612134313503650979135013471269::-dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425
+I[14:17:43,577] [500-chordDHT]ChordDHT: node is smaller
+D[14:17:43,578] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@5428fc81
+I[14:17:43,579] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for -2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408 containing set (1 elements):
+	-dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425::10.22.105.120:10101
+
+D[14:17:44,546] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=7025, periodic=true, period=1000}
+I[14:17:44,547] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb : 77610465-5264-4e64-823c-a20eb11be537 (100)
+D[14:17:44,548] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@42044e8b
+I[14:17:44,549] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb with message ID 77610465-5264-4e64-823c-a20eb11be537 payload of 100 bytes
+D[14:17:44,550] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@3b3c95aa
+I[14:17:44,550] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:17:44,683] [500-chordDHT]ChordDHT: COUNT: 3
+I[14:17:44,684] [500-chordDHT]ChordDHT: NODE: 11208227038239895647293039631547584083927555441745557711518156161133337522123::18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:17:44,684] [500-chordDHT]ChordDHT: SUCC: -19333305225043330601402913026852979672758497763304817372292704117289824797704::-2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408
+I[14:17:44,684] [500-chordDHT]ChordDHT: node is bigger
+D[14:17:44,684] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@2a0c9edb
+I[14:17:44,684] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb containing set (1 elements):
+	-2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408::10.22.105.120:10101
+
+D[14:17:45,559] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=8038, periodic=true, period=1000}
+I[14:17:45,560] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2 : 730fd943-79c7-43c8-8c69-44ebe7e84e9d (100)
+D[14:17:45,561] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@6c741dce
+I[14:17:45,561] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2 with message ID 730fd943-79c7-43c8-8c69-44ebe7e84e9d payload of 100 bytes
+D[14:17:45,562] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@32f3a17
+I[14:17:45,562] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2
+I[14:17:45,711] [500-chordDHT]ChordDHT: COUNT: 4
+I[14:17:45,711] [500-chordDHT]ChordDHT: NODE: -5986067459532460364353635637485530222888623029662775020383951748504242213538::-d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2
+I[14:17:45,711] [500-chordDHT]ChordDHT: SUCC: 11208227038239895647293039631547584083927555441745557711518156161133337522123::18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:17:45,712] [500-chordDHT]ChordDHT: node is smaller
+D[14:17:45,712] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@4c049d39
+I[14:17:45,712] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2 containing set (1 elements):
+	18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb::10.22.105.120:10101
+
+D[14:17:46,572] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=9051, periodic=true, period=1000}
+I[14:17:46,573] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> -2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408 : 001d8ae0-50ec-472f-b62b-854f13df3505 (100)
+D[14:17:46,574] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@2c94f224
+I[14:17:46,574] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to -2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408 with message ID 001d8ae0-50ec-472f-b62b-854f13df3505 payload of 100 bytes
+D[14:17:46,575] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@24e0b3fa
+I[14:17:46,575] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: -2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408
+I[14:17:46,675] [500-chordDHT]ChordDHT: COUNT: 5
+I[14:17:46,675] [500-chordDHT]ChordDHT: NODE: -19333305225043330601402913026852979672758497763304817372292704117289824797704::-2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408
+I[14:17:46,675] [500-chordDHT]ChordDHT: SUCC: -5986067459532460364353635637485530222888623029662775020383951748504242213538::-d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2
+I[14:17:46,675] [500-chordDHT]ChordDHT: node is smaller
+D[14:17:46,677] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@62a05b2b
+I[14:17:46,677] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for -2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408 containing set (1 elements):
+	-d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2::10.22.105.120:10101
+
+D[14:17:47,583] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=10062, periodic=true, period=1000}
+I[14:17:47,584] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2 : 8b190d5a-53ad-4306-903a-06946ebc3fab (100)
+D[14:17:47,586] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@2ef6a0dc
+I[14:17:47,586] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2 with message ID 8b190d5a-53ad-4306-903a-06946ebc3fab payload of 100 bytes
+D[14:17:47,587] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@3816459a
+I[14:17:47,587] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2
+I[14:17:47,689] [500-chordDHT]ChordDHT: COUNT: 6
+I[14:17:47,690] [500-chordDHT]ChordDHT: NODE: -5986067459532460364353635637485530222888623029662775020383951748504242213538::-d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2
+I[14:17:47,690] [500-chordDHT]ChordDHT: SUCC: -5986067459532460364353635637485530222888623029662775020383951748504242213538::-d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2
+I[14:17:47,691] [500-chordDHT]ChordDHT: node is smaller
+D[14:17:47,691] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@46730d6e
+I[14:17:47,691] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2 containing set (1 elements):
+	-d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2::10.22.105.120:10101
+
+D[14:17:48,595] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=11074, periodic=true, period=1000}
+I[14:17:48,595] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> -40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758 : 151f6f25-84ee-4598-a876-3d8b91a908d6 (100)
+D[14:17:48,596] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@4d7dc256
+I[14:17:48,596] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to -40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758 with message ID 151f6f25-84ee-4598-a876-3d8b91a908d6 payload of 100 bytes
+D[14:17:48,597] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@15add907
+I[14:17:48,597] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: -40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758
+I[14:17:48,696] [500-chordDHT]ChordDHT: COUNT: 7
+I[14:17:48,696] [500-chordDHT]ChordDHT: NODE: -29247017523065364790273278824397567769951408834016022098477197413857684576088::-40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758
+I[14:17:48,696] [500-chordDHT]ChordDHT: SUCC: -5986067459532460364353635637485530222888623029662775020383951748504242213538::-d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2
+I[14:17:48,698] [500-chordDHT]ChordDHT: node is smaller
+D[14:17:48,698] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@2d64a1d1
+I[14:17:48,698] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for -40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758 containing set (1 elements):
+	-d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2::10.22.105.120:10101
+
+D[14:17:49,603] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=12082, periodic=true, period=1000}
+I[14:17:49,603] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> -40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758 : ce0bb646-57ba-47d8-b4d3-e29c82410931 (100)
+D[14:17:49,604] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@368f04e1
+I[14:17:49,604] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to -40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758 with message ID ce0bb646-57ba-47d8-b4d3-e29c82410931 payload of 100 bytes
+D[14:17:49,604] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@44572464
+I[14:17:49,605] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: -40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758
+I[14:17:49,704] [500-chordDHT]ChordDHT: COUNT: 8
+I[14:17:49,705] [500-chordDHT]ChordDHT: NODE: -29247017523065364790273278824397567769951408834016022098477197413857684576088::-40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758
+I[14:17:49,705] [500-chordDHT]ChordDHT: SUCC: -29247017523065364790273278824397567769951408834016022098477197413857684576088::-40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758
+I[14:17:49,706] [500-chordDHT]ChordDHT: node is smaller
+D[14:17:49,706] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@68c97723
+I[14:17:49,706] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for -40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758 containing set (1 elements):
+	-40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758::10.22.105.120:10101
+
+D[14:17:50,611] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=13090, periodic=true, period=1000}
+I[14:17:50,612] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2 : 8655a93e-7370-4489-8564-55945fd3de00 (100)
+D[14:17:50,613] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@4b85771e
+I[14:17:50,614] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2 with message ID 8655a93e-7370-4489-8564-55945fd3de00 payload of 100 bytes
+D[14:17:50,615] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@15881d99
+I[14:17:50,615] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2
+I[14:17:50,716] [500-chordDHT]ChordDHT: COUNT: 9
+I[14:17:50,717] [500-chordDHT]ChordDHT: NODE: -5986067459532460364353635637485530222888623029662775020383951748504242213538::-d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2
+I[14:17:50,717] [500-chordDHT]ChordDHT: SUCC: -29247017523065364790273278824397567769951408834016022098477197413857684576088::-40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758
+I[14:17:50,718] [500-chordDHT]ChordDHT: node is bigger
+D[14:17:50,718] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@43672d96
+I[14:17:50,718] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2 containing set (1 elements):
+	-40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758::10.22.105.120:10101
+
+D[14:17:51,620] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=14099, periodic=true, period=1000}
+I[14:17:51,620] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> -2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408 : 3210fa56-d290-4c57-9173-c4f9f638ecce (100)
+D[14:17:51,621] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@d018117
+I[14:17:51,621] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to -2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408 with message ID 3210fa56-d290-4c57-9173-c4f9f638ecce payload of 100 bytes
+D[14:17:51,621] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@1a01ab24
+I[14:17:51,621] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: -2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408
+I[14:17:51,718] [500-chordDHT]ChordDHT: COUNT: 10
+I[14:17:51,718] [500-chordDHT]ChordDHT: NODE: -19333305225043330601402913026852979672758497763304817372292704117289824797704::-2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408
+I[14:17:51,718] [500-chordDHT]ChordDHT: SUCC: -5986067459532460364353635637485530222888623029662775020383951748504242213538::-d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2
+I[14:17:51,719] [500-chordDHT]ChordDHT: node is smaller
+D[14:17:51,719] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@2ed28ffb
+I[14:17:51,719] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for -2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408 containing set (1 elements):
+	-d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2::10.22.105.120:10101
+
+D[14:17:52,633] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=15112, periodic=true, period=1000}
+I[14:17:52,634] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2 : 143ff776-4623-43dc-9107-17a41619ba31 (100)
+D[14:17:52,635] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@4e0f30b8
+I[14:17:52,636] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2 with message ID 143ff776-4623-43dc-9107-17a41619ba31 payload of 100 bytes
+D[14:17:52,637] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@15594e74
+I[14:17:52,637] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2
+I[14:17:52,735] [500-chordDHT]ChordDHT: COUNT: 11
+I[14:17:52,736] [500-chordDHT]ChordDHT: NODE: -5986067459532460364353635637485530222888623029662775020383951748504242213538::-d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2
+I[14:17:52,736] [500-chordDHT]ChordDHT: SUCC: -5986067459532460364353635637485530222888623029662775020383951748504242213538::-d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2
+I[14:17:52,736] [500-chordDHT]ChordDHT: node is smaller
+D[14:17:52,737] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@347ebf72
+I[14:17:52,737] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2 containing set (1 elements):
+	-d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2::10.22.105.120:10101
+
+D[14:17:53,648] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=16127, periodic=true, period=1000}
+I[14:17:53,649] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> -40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758 : 06ead78d-62f1-4c7e-a8d5-72832f772c0d (100)
+D[14:17:53,651] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@35f699d3
+I[14:17:53,651] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to -40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758 with message ID 06ead78d-62f1-4c7e-a8d5-72832f772c0d payload of 100 bytes
+D[14:17:53,652] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@230253a3
+I[14:17:53,653] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: -40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758
+I[14:17:53,752] [500-chordDHT]ChordDHT: COUNT: 12
+I[14:17:53,752] [500-chordDHT]ChordDHT: NODE: -29247017523065364790273278824397567769951408834016022098477197413857684576088::-40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758
+I[14:17:53,753] [500-chordDHT]ChordDHT: SUCC: -5986067459532460364353635637485530222888623029662775020383951748504242213538::-d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2
+I[14:17:53,753] [500-chordDHT]ChordDHT: node is smaller
+D[14:17:53,753] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@fe165c1
+I[14:17:53,753] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for -40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758 containing set (1 elements):
+	-d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2::10.22.105.120:10101
+
+D[14:17:54,662] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=17141, periodic=true, period=1000}
+I[14:17:54,662] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2 : ed7a0d77-70e2-4229-9f0a-854a9af944ef (100)
+D[14:17:54,664] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@38dc0e75
+I[14:17:54,664] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2 with message ID ed7a0d77-70e2-4229-9f0a-854a9af944ef payload of 100 bytes
+D[14:17:54,665] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@7ba19939
+I[14:17:54,665] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2
+I[14:17:54,770] [500-chordDHT]ChordDHT: COUNT: 13
+I[14:17:54,770] [500-chordDHT]ChordDHT: NODE: -5986067459532460364353635637485530222888623029662775020383951748504242213538::-d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2
+I[14:17:54,770] [500-chordDHT]ChordDHT: SUCC: -5986067459532460364353635637485530222888623029662775020383951748504242213538::-d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2
+I[14:17:54,771] [500-chordDHT]ChordDHT: node is smaller
+D[14:17:54,771] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@7918a333
+I[14:17:54,771] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2 containing set (1 elements):
+	-d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2::10.22.105.120:10101
+
+D[14:17:55,673] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=18152, periodic=true, period=1000}
+I[14:17:55,674] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2 : 2167f61c-7763-4a8b-bfe9-aecf2ac78073 (100)
+D[14:17:55,675] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@78a195c2
+I[14:17:55,675] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2 with message ID 2167f61c-7763-4a8b-bfe9-aecf2ac78073 payload of 100 bytes
+D[14:17:55,676] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@12ae116e
+I[14:17:55,677] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2
+I[14:17:55,775] [500-chordDHT]ChordDHT: COUNT: 14
+I[14:17:55,775] [500-chordDHT]ChordDHT: NODE: -5986067459532460364353635637485530222888623029662775020383951748504242213538::-d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2
+I[14:17:55,776] [500-chordDHT]ChordDHT: SUCC: -5986067459532460364353635637485530222888623029662775020383951748504242213538::-d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2
+I[14:17:55,776] [500-chordDHT]ChordDHT: node is smaller
+D[14:17:55,776] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@7cea287a
+I[14:17:55,776] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2 containing set (1 elements):
+	-d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2::10.22.105.120:10101
+
+D[14:17:56,688] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=19167, periodic=true, period=1000}
+I[14:17:56,689] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> -2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408 : 3658cc6c-32ae-4d7d-bb12-1b1a443c3f3f (100)
+D[14:17:56,690] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@249d2e34
+I[14:17:56,690] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to -2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408 with message ID 3658cc6c-32ae-4d7d-bb12-1b1a443c3f3f payload of 100 bytes
+D[14:17:56,692] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@63aa34ed
+I[14:17:56,692] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: -2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408
+I[14:17:56,789] [500-chordDHT]ChordDHT: COUNT: 15
+I[14:17:56,789] [500-chordDHT]ChordDHT: NODE: -19333305225043330601402913026852979672758497763304817372292704117289824797704::-2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408
+I[14:17:56,790] [500-chordDHT]ChordDHT: SUCC: -5986067459532460364353635637485530222888623029662775020383951748504242213538::-d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2
+I[14:17:56,790] [500-chordDHT]ChordDHT: node is smaller
+D[14:17:56,790] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@182000af
+I[14:17:56,790] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for -2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408 containing set (1 elements):
+	-d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2::10.22.105.120:10101
+
+D[14:17:57,700] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=20179, periodic=true, period=1000}
+I[14:17:57,701] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb : 5b7de62b-3c8b-4a9d-8f08-e9249a708dcf (100)
+D[14:17:57,703] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@6cdb89ec
+I[14:17:57,703] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb with message ID 5b7de62b-3c8b-4a9d-8f08-e9249a708dcf payload of 100 bytes
+D[14:17:57,704] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@24470a40
+I[14:17:57,704] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:17:57,793] [500-chordDHT]ChordDHT: COUNT: 16
+I[14:17:57,794] [500-chordDHT]ChordDHT: NODE: 11208227038239895647293039631547584083927555441745557711518156161133337522123::18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:17:57,794] [500-chordDHT]ChordDHT: SUCC: -19333305225043330601402913026852979672758497763304817372292704117289824797704::-2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408
+I[14:17:57,794] [500-chordDHT]ChordDHT: node is bigger
+D[14:17:57,794] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@415fc5f5
+I[14:17:57,795] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb containing set (1 elements):
+	-2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408::10.22.105.120:10101
+
+D[14:17:58,714] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=21193, periodic=true, period=1000}
+I[14:17:58,715] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb : fd0ea4c5-61da-4fde-a316-1794303e1ba9 (100)
+D[14:17:58,716] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@cfebf64
+I[14:17:58,716] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb with message ID fd0ea4c5-61da-4fde-a316-1794303e1ba9 payload of 100 bytes
+D[14:17:58,717] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@2a8996eb
+I[14:17:58,718] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:17:58,809] [500-chordDHT]ChordDHT: COUNT: 17
+I[14:17:58,809] [500-chordDHT]ChordDHT: NODE: 11208227038239895647293039631547584083927555441745557711518156161133337522123::18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:17:58,809] [500-chordDHT]ChordDHT: SUCC: 11208227038239895647293039631547584083927555441745557711518156161133337522123::18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:17:58,809] [500-chordDHT]ChordDHT: node is smaller
+D[14:17:58,810] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@14c3f32c
+I[14:17:58,810] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb containing set (1 elements):
+	18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb::10.22.105.120:10101
+
+D[14:17:59,727] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=22206, periodic=true, period=1000}
+I[14:17:59,728] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb : d5eef9fd-6c80-41dc-8c2d-0524a54990fd (100)
+D[14:17:59,729] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@24679cb1
+I[14:17:59,729] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb with message ID d5eef9fd-6c80-41dc-8c2d-0524a54990fd payload of 100 bytes
+D[14:17:59,730] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@72f08b1e
+I[14:17:59,730] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:17:59,821] [500-chordDHT]ChordDHT: COUNT: 18
+I[14:17:59,821] [500-chordDHT]ChordDHT: NODE: 11208227038239895647293039631547584083927555441745557711518156161133337522123::18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:17:59,822] [500-chordDHT]ChordDHT: SUCC: 11208227038239895647293039631547584083927555441745557711518156161133337522123::18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:17:59,822] [500-chordDHT]ChordDHT: node is smaller
+D[14:17:59,822] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@1b2895a5
+I[14:17:59,822] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb containing set (1 elements):
+	18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb::10.22.105.120:10101
+
+D[14:18:00,738] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=23217, periodic=true, period=1000}
+I[14:18:00,738] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> -40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758 : 9aae5b4e-373e-4f37-9d36-3733fecde72e (100)
+D[14:18:00,738] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@62541c3b
+I[14:18:00,739] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to -40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758 with message ID 9aae5b4e-373e-4f37-9d36-3733fecde72e payload of 100 bytes
+D[14:18:00,739] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@3a12de84
+I[14:18:00,739] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: -40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758
+I[14:18:00,838] [500-chordDHT]ChordDHT: COUNT: 19
+I[14:18:00,839] [500-chordDHT]ChordDHT: NODE: -29247017523065364790273278824397567769951408834016022098477197413857684576088::-40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758
+I[14:18:00,839] [500-chordDHT]ChordDHT: SUCC: 11208227038239895647293039631547584083927555441745557711518156161133337522123::18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:18:00,839] [500-chordDHT]ChordDHT: node is smaller
+D[14:18:00,839] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@6985c9ce
+I[14:18:00,839] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for -40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758 containing set (1 elements):
+	18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb::10.22.105.120:10101
+
+D[14:18:01,749] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=24228, periodic=true, period=1000}
+I[14:18:01,750] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb : 117147df-24ea-4b7e-bf5f-72d69451c047 (100)
+D[14:18:01,750] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@719f525b
+I[14:18:01,751] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb with message ID 117147df-24ea-4b7e-bf5f-72d69451c047 payload of 100 bytes
+D[14:18:01,751] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@6edbed79
+I[14:18:01,752] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:18:01,837] [500-chordDHT]ChordDHT: COUNT: 20
+I[14:18:01,838] [500-chordDHT]ChordDHT: NODE: 11208227038239895647293039631547584083927555441745557711518156161133337522123::18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:18:01,838] [500-chordDHT]ChordDHT: SUCC: 11208227038239895647293039631547584083927555441745557711518156161133337522123::18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:18:01,838] [500-chordDHT]ChordDHT: node is smaller
+D[14:18:01,840] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@2ec57470
+I[14:18:01,840] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb containing set (1 elements):
+	18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb::10.22.105.120:10101
+
+D[14:18:02,760] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=25239, periodic=true, period=1000}
+I[14:18:02,760] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2 : 4d8f87ec-9ba6-47dc-9ef8-4565a2db1bab (100)
+D[14:18:02,761] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@6c320057
+I[14:18:02,761] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2 with message ID 4d8f87ec-9ba6-47dc-9ef8-4565a2db1bab payload of 100 bytes
+D[14:18:02,762] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@4f7f72f3
+I[14:18:02,762] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2
+I[14:18:02,911] [500-chordDHT]ChordDHT: COUNT: 21
+I[14:18:02,912] [500-chordDHT]ChordDHT: NODE: -5986067459532460364353635637485530222888623029662775020383951748504242213538::-d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2
+I[14:18:02,912] [500-chordDHT]ChordDHT: SUCC: 11208227038239895647293039631547584083927555441745557711518156161133337522123::18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:18:02,912] [500-chordDHT]ChordDHT: node is smaller
+D[14:18:02,912] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@2bbe7fa6
+I[14:18:02,912] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2 containing set (1 elements):
+	18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb::10.22.105.120:10101
+
+D[14:18:03,769] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=26248, periodic=true, period=1000}
+I[14:18:03,770] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb : 63891a8f-995d-4bc9-8410-2857f113e32f (100)
+D[14:18:03,771] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@20b8fd00
+I[14:18:03,771] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb with message ID 63891a8f-995d-4bc9-8410-2857f113e32f payload of 100 bytes
+D[14:18:03,772] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@4fa2d155
+I[14:18:03,772] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:18:03,860] [500-chordDHT]ChordDHT: COUNT: 22
+I[14:18:03,861] [500-chordDHT]ChordDHT: NODE: 11208227038239895647293039631547584083927555441745557711518156161133337522123::18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:18:03,861] [500-chordDHT]ChordDHT: SUCC: 11208227038239895647293039631547584083927555441745557711518156161133337522123::18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:18:03,861] [500-chordDHT]ChordDHT: node is smaller
+D[14:18:03,861] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@25db6b93
+I[14:18:03,862] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb containing set (1 elements):
+	18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb::10.22.105.120:10101
+
+D[14:18:04,781] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=27260, periodic=true, period=1000}
+I[14:18:04,781] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb : ffe70081-9f17-4745-99dd-fee76757721e (100)
+D[14:18:04,782] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@5917e7c7
+I[14:18:04,782] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb with message ID ffe70081-9f17-4745-99dd-fee76757721e payload of 100 bytes
+D[14:18:04,782] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@33345634
+I[14:18:04,782] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:18:04,868] [500-chordDHT]ChordDHT: COUNT: 23
+I[14:18:04,869] [500-chordDHT]ChordDHT: NODE: 11208227038239895647293039631547584083927555441745557711518156161133337522123::18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:18:04,869] [500-chordDHT]ChordDHT: SUCC: 11208227038239895647293039631547584083927555441745557711518156161133337522123::18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:18:04,869] [500-chordDHT]ChordDHT: node is smaller
+D[14:18:04,869] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@18cf00c
+I[14:18:04,869] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb containing set (1 elements):
+	18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb::10.22.105.120:10101
+
+D[14:18:05,781] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=28260, periodic=true, period=1000}
+I[14:18:05,782] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> -40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758 : 2028525d-2fa4-4f90-9a18-d557b5d953e2 (100)
+D[14:18:05,783] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@663b5dc0
+I[14:18:05,783] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to -40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758 with message ID 2028525d-2fa4-4f90-9a18-d557b5d953e2 payload of 100 bytes
+D[14:18:05,784] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@edcd5e5
+I[14:18:05,784] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: -40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758
+I[14:18:05,883] [500-chordDHT]ChordDHT: COUNT: 24
+I[14:18:05,884] [500-chordDHT]ChordDHT: NODE: -29247017523065364790273278824397567769951408834016022098477197413857684576088::-40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758
+I[14:18:05,884] [500-chordDHT]ChordDHT: SUCC: 11208227038239895647293039631547584083927555441745557711518156161133337522123::18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:18:05,884] [500-chordDHT]ChordDHT: node is smaller
+D[14:18:05,884] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@18423567
+I[14:18:05,884] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for -40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758 containing set (1 elements):
+	18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb::10.22.105.120:10101
+
+D[14:18:06,796] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=29274, periodic=true, period=1000}
+I[14:18:06,796] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2 : 158f88ca-8415-4cf6-9527-719bd591d757 (100)
+D[14:18:06,797] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@7e0dc077
+I[14:18:06,797] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2 with message ID 158f88ca-8415-4cf6-9527-719bd591d757 payload of 100 bytes
+D[14:18:06,799] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@5ac33482
+I[14:18:06,799] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2
+I[14:18:06,929] [500-chordDHT]ChordDHT: COUNT: 25
+I[14:18:06,929] [500-chordDHT]ChordDHT: NODE: -5986067459532460364353635637485530222888623029662775020383951748504242213538::-d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2
+I[14:18:06,929] [500-chordDHT]ChordDHT: SUCC: 11208227038239895647293039631547584083927555441745557711518156161133337522123::18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:18:06,929] [500-chordDHT]ChordDHT: node is smaller
+D[14:18:06,929] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@1867532a
+I[14:18:06,930] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for -d3bfe7e64adc13f62646e1b317b8ef76655a2f299dffa882986a0b740f9d2a2 containing set (1 elements):
+	18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb::10.22.105.120:10101
+
+D[14:18:07,804] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=30283, periodic=true, period=1000}
+I[14:18:07,804] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb : b7fc93f6-3688-4d6f-aa40-c8032f6f893b (100)
+D[14:18:07,804] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@248ed8bb
+I[14:18:07,804] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb with message ID b7fc93f6-3688-4d6f-aa40-c8032f6f893b payload of 100 bytes
+D[14:18:07,805] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@93f8fa4
+I[14:18:07,805] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:18:07,890] [500-chordDHT]ChordDHT: COUNT: 26
+I[14:18:07,890] [500-chordDHT]ChordDHT: NODE: 11208227038239895647293039631547584083927555441745557711518156161133337522123::18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:18:07,891] [500-chordDHT]ChordDHT: SUCC: 11208227038239895647293039631547584083927555441745557711518156161133337522123::18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:18:07,891] [500-chordDHT]ChordDHT: node is smaller
+D[14:18:07,891] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@2d6e3840
+I[14:18:07,891] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb containing set (1 elements):
+	18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb::10.22.105.120:10101
+
+D[14:18:08,817] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=31296, periodic=true, period=1000}
+I[14:18:08,817] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> -2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408 : 51c1d2ed-413f-4eea-a394-2f5e78d25a1e (100)
+D[14:18:08,819] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@3d704be2
+I[14:18:08,819] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to -2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408 with message ID 51c1d2ed-413f-4eea-a394-2f5e78d25a1e payload of 100 bytes
+D[14:18:08,819] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@3b4c6a9c
+I[14:18:08,819] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: -2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408
+I[14:18:08,951] [500-chordDHT]ChordDHT: COUNT: 27
+I[14:18:08,951] [500-chordDHT]ChordDHT: NODE: -19333305225043330601402913026852979672758497763304817372292704117289824797704::-2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408
+I[14:18:08,951] [500-chordDHT]ChordDHT: SUCC: 11208227038239895647293039631547584083927555441745557711518156161133337522123::18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:18:08,952] [500-chordDHT]ChordDHT: node is smaller
+D[14:18:08,952] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@1facb165
+I[14:18:08,952] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for -2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408 containing set (1 elements):
+	18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb::10.22.105.120:10101
+
+D[14:18:09,829] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=32308, periodic=true, period=1000}
+I[14:18:09,830] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> -2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408 : c6d513db-7719-4f63-9044-de1b86080c55 (100)
+D[14:18:09,831] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@4db5f92b
+I[14:18:09,831] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to -2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408 with message ID c6d513db-7719-4f63-9044-de1b86080c55 payload of 100 bytes
+D[14:18:09,832] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@f728af3
+I[14:18:09,832] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: -2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408
+I[14:18:09,930] [500-chordDHT]ChordDHT: COUNT: 28
+I[14:18:09,930] [500-chordDHT]ChordDHT: NODE: -19333305225043330601402913026852979672758497763304817372292704117289824797704::-2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408
+I[14:18:09,930] [500-chordDHT]ChordDHT: SUCC: -19333305225043330601402913026852979672758497763304817372292704117289824797704::-2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408
+I[14:18:09,930] [500-chordDHT]ChordDHT: node is smaller
+D[14:18:09,931] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@114564e5
+I[14:18:09,931] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for -2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408 containing set (1 elements):
+	-2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408::10.22.105.120:10101
+
+D[14:18:10,838] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=33317, periodic=true, period=1000}
+I[14:18:10,839] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb : ea4d8422-5cad-4bdf-a077-5ea2adf8028a (100)
+D[14:18:10,840] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@2ed51274
+I[14:18:10,840] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb with message ID ea4d8422-5cad-4bdf-a077-5ea2adf8028a payload of 100 bytes
+D[14:18:10,841] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@6ed25870
+I[14:18:10,841] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:18:10,931] [500-chordDHT]ChordDHT: COUNT: 29
+I[14:18:10,932] [500-chordDHT]ChordDHT: NODE: 11208227038239895647293039631547584083927555441745557711518156161133337522123::18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:18:10,932] [500-chordDHT]ChordDHT: SUCC: -19333305225043330601402913026852979672758497763304817372292704117289824797704::-2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408
+I[14:18:10,932] [500-chordDHT]ChordDHT: node is bigger
+D[14:18:10,932] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@5488b952
+I[14:18:10,932] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for 18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb containing set (1 elements):
+	-2abe435289d9d07a83b6d6163bb7979c5d0000244d433e55408b070d4bc7c408::10.22.105.120:10101
+
+D[14:18:11,851] [300-AutomateCommunicationApp]GenericProtocol: Handling event: TimerEvent{uuid=2, timer=protocols.apps.timers.SendMessageTimer@ad03c74, consumer=protocols.apps.AutomatedApp@738dc9b, triggerTime=33317, periodic=true, period=1000}
+I[14:18:11,852] [300-AutomateCommunicationApp]AutomatedApp: Sending: -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 -> -40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758 : df3b2e1d-361c-40be-b285-7d1534df6982 (100)
+D[14:18:11,854] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@36167e49
+I[14:18:11,854] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Send Request: SendRequest from -dfd5d68ee036d6f17ad8b264f07a0e3e92a8f2f139668bb404a95f7bfc74425 to -40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758 with message ID df3b2e1d-361c-40be-b285-7d1534df6982 payload of 100 bytes
+D[14:18:11,855] [500-chordDHT]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@243d8de3
+I[14:18:11,855] [500-chordDHT]ChordDHT: Received LookupRequest: Lookup Request for: -40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758
+I[14:18:11,955] [500-chordDHT]ChordDHT: COUNT: 30
+I[14:18:11,955] [500-chordDHT]ChordDHT: NODE: -29247017523065364790273278824397567769951408834016022098477197413857684576088::-40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758
+I[14:18:11,955] [500-chordDHT]ChordDHT: SUCC: 11208227038239895647293039631547584083927555441745557711518156161133337522123::18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb
+I[14:18:11,955] [500-chordDHT]ChordDHT: node is smaller
+D[14:18:11,955] [400-EmptyPoint2PotinComm]GenericProtocol: Handling event: pt.unl.fct.di.novasys.babel.internal.IPCEvent@c4e5622
+I[14:18:11,955] [400-EmptyPoint2PotinComm]EmptyPoint2PointComm: Received Lookup Reply: LookupReply for -40a939acdbb0ed27e362069f4ffa02c845ac9cf4ffe6a1269292f198819b5758 containing set (1 elements):
+	18c7a1b6af76b08e95f839de764b00215bc395fbbe3fddbb14e06bb7e8062fcb::10.22.105.120:10101
+
+I[14:18:12,229] [Thread-1]Main: Goodbye
