@@ -1,17 +1,15 @@
-# ASD2024-Proj1
+# ASD 2024/25 Project 1
 
-This is the basis for the first project of Algorithms and Distributed Systems 2024/25 Edition.
+## Authors
 
-Questions should be sent to João Leitão
+- João Gonçalo Freitas Pereira 60096
+- Gonçalo Miguel Fernandes Virgínia 56773
+- Ricardo Filipe Rodrigues 72054
 
 ## Compiling and Running
 
-Use the command
+To compile the project:
 
-''' 
-mvn clean compile package
-'''
+`mvn clean compile package`
 
-to generate in the target folder a asdProj.jar. This jar contains all classes and dependencias.
-
-The properties file must be adjusted for all required properties. You can complement properties on that file with additional options on the command line.
+This command will compile the project and generate a jar file in the target directory, containing all the dependencies.
