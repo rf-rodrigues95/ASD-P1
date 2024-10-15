@@ -76,10 +76,13 @@ public class Point2PointCommunication extends GenericProtocol {
         LOGGER.info("Received Lookup Reply: " + reply.toString());
         System.out.println("RECEIVED in P2P");
         final Host dest = reply.getPeersIterator().next();
+
         final Send send = sendQueue.poll();
-        final PayloadMessage payloadMessage = new PayloadMessage(send.getSenderPeerID(), send.getMessageID(), send.getMessagePayload());
-        Host destTest = new Host(dest.getAddress(), dest.getPort() + 1);
-        sendMessageToHost(payloadMessage, destTest);
+        if(send != null) {
+            final PayloadMessage payloadMessage = new PayloadMessage(send.getSenderPeerID(), send.getMessageID(), send.getMessagePayload());
+            Host destTest = new Host(dest.getAddress(), dest.getPort() + 1);
+            sendMessageToHost(payloadMessage, destTest);
+        }
     }
 
     private void uponPayloadMessage(PayloadMessage msg, Host from, short sourceProto, int channelId) {

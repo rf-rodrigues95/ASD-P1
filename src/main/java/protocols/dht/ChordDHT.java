@@ -105,8 +105,6 @@ public class ChordDHT extends GenericProtocol {
 
     @Override
     public void init(Properties props) {
-        LOGGER.info("text");
-
         if (props.containsKey("contact")) {
             try {
                 final String contact = props.getProperty("contact");
@@ -142,11 +140,16 @@ public class ChordDHT extends GenericProtocol {
             sendReply(lookupReply, destinationProtocol);
         } else {
             final ChordNode closestNode = closestPrecedingNode(peerID);
+
+            LOGGER.info(closestNode.getHost());
             if (closestNode.getHost().equals(self.getHost())) {
                 LOGGER.info("PROBLEM!!!!");
                 LOGGER.info("PROBLEM!!!!");
                 LOGGER.info("PROBLEM!!!!");
                 LOGGER.info("PROBLEM!!!!");
+
+
+                //the logic will probably go along the lines of the already done Join. 
 
 /*                 final LookupReply lookupReply = new LookupReply(msg.getPeerID());
                 lookupReply.addAllPeers(successor.getPeers().get(IdentifierUtils.toHex(msg.getPeerID())));
@@ -166,6 +169,14 @@ public class ChordDHT extends GenericProtocol {
                 return entrySuc;
             }
         }
+
+        final FingerEntry firstFinger = fingers.get(BigInteger.ONE);
+        if (firstFinger != null && IdentifierUtils.toNumerical(firstFinger.getNode().getNodeID())
+                .compareTo(IdentifierUtils.toNumerical(self.getNodeID())) < 0) {
+            LOGGER.info("Finger[1] is smaller than self, returning finger[1]");
+            return firstFinger.getNode();
+        }
+        
         return new ChordNode(self.getNodeID(), self.getHost());
     }
 
@@ -178,11 +189,12 @@ public class ChordDHT extends GenericProtocol {
         } else {
             final ChordNode closestNode = closestPrecedingNode(msg.getPeerID());
             if (closestNode.getHost().equals(self.getHost())) {
-                LOGGER.info("OHFFS: {}", msg.getPeerID().toString());
+                LOGGER.info("HERE2 PROBLEM ALREADY MENTIONED : {}", msg.getPeerID().toString());
                 final LookupReply lookupReply = new LookupReply(msg.getPeerID());
                 lookupReply.addAllPeers(successor.getPeers().get(IdentifierUtils.toHex(msg.getPeerID())));
                 sendReply(lookupReply, msg.getDestinationProtocol());
 
+                return;
                 /* 
                 TRYING SOMETHING
                 final LookupReply lookupReply = new LookupReply(msg.getPeerID());
@@ -200,14 +212,14 @@ public class ChordDHT extends GenericProtocol {
     }
 
     private void join(ChordNode existingNode) {
-        System.out.println("JOINING...");
-        predecessor = null;
-        sendMessageToHost(new JoinLookup(self.getNodeID(), self.getHost()), existingNode.getHost());
+        LOGGER.info("JOINING...");
+        //predecessor = null;
+        sendMessageToHost(new JoinLookup(existingNode.getNodeID(), self.getHost(), self.getNodeID(), self.getPeers()), existingNode.getHost());
     }
 
     private void uponJoinLookup(JoinLookup msg, Host from, short sourceProto, int channelId) {
         LOGGER.debug("Received {} from {}", msg, from);
-        joinFindPredecessor(msg.getTargetID(), msg.getOrigin());
+        joinFindPredecessor(msg.getTargetID(), msg.getOrigin(), msg.getOriginID(), msg.getOriginSuccessors());
     }
 
     private void uponJoinLookupFail(ProtoMessage msg, Host host, short destProto,
@@ -215,12 +227,12 @@ public class ChordDHT extends GenericProtocol {
         LOGGER.error("Message {} to {} failed, reason: {}", msg, host, throwable);
     }
 
-    private void joinFindPredecessor(byte[] targetID, Host origin) {
+    private void joinFindPredecessor(byte[] targetID, Host origin, byte[] originID, Map<String, Set<Host>> originSuccessors) {
         if (ChordInterval.isInInterval(targetID, self.getNodeID(), successor.getNodeID(), true, true)) {
             sendMessageToHost(new JoinLookupReply(successor.getNodeID(), successor.getHost(), successor.getPeers()), origin);
         } else {
             final ChordNode closestNode = closestPrecedingNode(targetID);
-            sendMessageToHost(new JoinFindPredecessorRequest(targetID, origin), closestNode.getHost());
+            sendMessageToHost(new JoinFindPredecessorRequest(targetID, origin, originID, originSuccessors), closestNode.getHost());
         }
     }
 
@@ -230,12 +242,20 @@ public class ChordDHT extends GenericProtocol {
             sendMessageToHost(new JoinLookupReply(successor.getNodeID(), successor.getHost(), successor.getPeers()), msg.getOrigin());
         } else {
             final ChordNode closestNode = closestPrecedingNode(msg.getTargetID());
-            System.out.println("CLOSEST NODE: " + closestNode);
-            if (closestNode.getHost().equals(self.getHost())) {
-                sendMessageToHost(new JoinLookupReply(successor.getNodeID(), successor.getHost(), successor.getPeers()), msg.getOrigin());
+
+            if (closestNode.getHost().equals(self.getHost())) {                
+                successor = new ChordNode(msg.getOriginID(), msg.getOrigin(), msg.getOriginSuccessors());
+                this.successor.addPeer(IdentifierUtils.toHex(msg.getOriginID()), msg.getOrigin());
+                
+                final byte[] startID = FingerEntry.calculateStart(self.getNodeID(), 1);
+                fingers.put(BigInteger.ONE, new FingerEntry(startID, new ChordInterval(IdentifierUtils.toNumerical(startID),
+                IdentifierUtils.toNumerical(FingerEntry.calculateStart(self.getNodeID(), 2)), false, false),
+                 new ChordNode(successor.getNodeID(), successor.getHost(), successor.getPeers()))); 
+
+                sendMessageToHost(new JoinLookupReply(self.getNodeID(), self.getHost(), self.getPeers()), msg.getOrigin());
                 return;
             }
-            sendMessageToHost(new JoinFindPredecessorRequest(msg.getTargetID(), msg.getOrigin()), closestNode.getHost());
+            sendMessageToHost(new JoinFindPredecessorRequest(msg.getTargetID(), msg.getOrigin(), msg.getOriginID(), msg.getOriginSuccessors()), closestNode.getHost());
         }
     }
 
@@ -251,6 +271,10 @@ public class ChordDHT extends GenericProtocol {
         //successor = new ChordNode(msg.getSuccessorID(), msg.getSuccessorHost(), msg.getSuccessorPeers());
         //successor.addPeer(self.getNodeIDHex(), self.getHost());
         predecessor = new ChordNode(msg.getSuccessorID(), msg.getSuccessorHost(), msg.getSuccessorPeers());
+
+        //THIS IS NOT DONE YET, PROBABLY, WE HAVE TO CHANGE THE MESSAGE, TO ALSO SEND SUCESSOR
+        successor = new ChordNode(msg.getSuccessorID(), msg.getSuccessorHost(), msg.getSuccessorPeers());
+        successor.addPeer(self.getNodeIDHex(), self.getHost());
 
         LOGGER.info("JOIN LOOKUP REPLY. SUCCESSOR: " + successor);
 
