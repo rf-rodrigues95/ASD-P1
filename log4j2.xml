@@ -14,6 +14,7 @@
         <Logger level="info" name="protocols.apps"/>
         <Logger level="info" name="protocols.overlays"/>
         <Logger level="debug" name="protocols.dissemination"/> -->
+        <!-- <Logger level="all" name="protocols"/> -->
         <Logger level="info" name="io.netty"/>
         <Logger level="info" name="network"/>
         <Logger level="info" name="channel"/>

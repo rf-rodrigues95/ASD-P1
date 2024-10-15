@@ -1,30 +1,28 @@
-import java.net.InetAddress;
-import java.util.Properties;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import protocols.apps.InteractiveApp;
 import protocols.dht.ChordDHT;
-import protocols.point2point.EmptyPoint2PointComm;
+import protocols.point2point.Point2PointCommunication;
 import pt.unl.fct.di.novasys.babel.core.Babel;
 import pt.unl.fct.di.novasys.network.data.Host;
 import utils.InterfaceToIp;
 
+import java.net.InetAddress;
+import java.util.Properties;
+
 
 public class ManualMain {
+
+    //Creates the logger object
+    private static final Logger logger = LogManager.getLogger(ManualMain.class);
+    //Default babel configuration file (can be overridden by the "-config" launch argument)
+    private static final String DEFAULT_CONF = "babel_config.properties";
 
     //Sets the log4j (logging library) configuration file
     static {
         System.setProperty("log4j.configurationFile", "log4j2.xml");
     }
 
-    //Creates the logger object
-    private static final Logger logger = LogManager.getLogger(ManualMain.class);
-
-    //Default babel configuration file (can be overridden by the "-config" launch argument)
-    private static final String DEFAULT_CONF = "babel_config.properties";
-    
     public static void main(String[] args) throws Exception {
 
         //Get the (singleton) babel instance
@@ -39,36 +37,36 @@ public class ManualMain {
 
         //The Host object is an address/port pair that represents a network host. It is used extensively in babel
         //It implements equals and hashCode, and also includes a serializer that makes it easy to use in network messages
-        Host dhtHost =  new Host(InetAddress.getByName(props.getProperty("address")),
+        Host dhtHost = new Host(InetAddress.getByName(props.getProperty("address")),
                 Integer.parseInt(props.getProperty("port")));
 
         Host commHost = new Host(InetAddress.getByName(props.getProperty("address")),
-                Integer.parseInt(props.getProperty("port"))+ 1);
-        
+                Integer.parseInt(props.getProperty("port")) + 1);
+
         logger.info("Hello, I am {}", dhtHost);
 
         // Application
-        InteractiveApp interactiveApp = new InteractiveApp(props, EmptyPoint2PointComm.PROTOCOL_ID);
-        
-      //Point-to-Point Communication Protocol
-        EmptyPoint2PointComm commProto = new EmptyPoint2PointComm(commHost, ChordDHT.PROTOCOL_ID);
-        
+        InteractiveApp interactiveApp = new InteractiveApp(props, Point2PointCommunication.PROTOCOL_ID);
+
+        //Point-to-Point Communication Protocol
+        Point2PointCommunication commProto = new Point2PointCommunication(props, commHost, ChordDHT.PROTOCOL_ID);
+
         //DHT Protocol
-        ChordDHT dhtProto = new ChordDHT(dhtHost);
-        
+        ChordDHT dhtProto = new ChordDHT(props, dhtHost);
+
         //Register applications in babel
         babel.registerProtocol(interactiveApp);
-        
+
         //Register protocols
         babel.registerProtocol(commProto);
         babel.registerProtocol(dhtProto);
-        
+
         //Init the protocols. This should be done after creating all protocols, since there can be inter-protocol
         //communications in this step.
         interactiveApp.init(props);
         commProto.init(props);
         dhtProto.init(props);
-        
+
         //Start babel and protocol threads
         babel.start();
 
