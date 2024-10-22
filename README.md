@@ -1,8 +1,6 @@
 # ASD 2024/25 Project 1
 
 ## Authors
-
-- João Gonçalo Freitas Pereira 60096
 - Gonçalo Miguel Fernandes Virgínia 56773
 - Ricardo Filipe Rodrigues 72054
 
